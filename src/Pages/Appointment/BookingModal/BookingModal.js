@@ -43,7 +43,7 @@ const BookingModal = ({ openBooking, handleBookingClose, booking, date, setBooki
             date: date.toLocaleDateString()
         }
         // send to the server
-        fetch('http://localhost:5000/appointments', {
+        fetch('https://obscure-wildwood-41204.herokuapp.com/appointments', {
             method: 'POST',
             body: JSON.stringify(appointment),
             headers: {
